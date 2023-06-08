@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial;
+}
+
+p {
+  font-family: Arial;
+}
+
+header {
+  background-color: rgb(114, 255, 0);
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 200;
+}
+
+.logo-logo {
+  height: 40px;
+  margin-left: 5px;
+}
+
+.header-menu {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: 60px 60px;
+  align-items: center;
+}
+
+.menu-home .menu-gate {
+  font-size: 20px;
+  margin: 10px;
+}
