@@ -1,1 +1,1 @@
-# dietgateway.github.io
+# dietgateway
