@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: Arial;
+}
+
+.welcome-text {
+  color: white;
+  text-align: center;
+  margin-top: 250px;
+  font-size: 24px;
+}
+
+.butt-div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.enter-butt {
+  font-size: 18px;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

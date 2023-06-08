@@ -1,0 +1,92 @@
+.gate-name {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.gate-img {
+  width: 200px;
+}
+
+.progress {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 100px;
+  padding-bottom: 70px;
+}
+
+.progress-title {
+  color: white;
+  font-size: 18px;
+  justify-self: center;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.progress-pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-done {
+  border-radius: 100px;
+  padding: 10px 15px;
+  background-color: rgb(192, 74, 48);
+  border-color: rgb(252, 173, 52);
+  border-style: solid;
+  color: white;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  margin-right: 5px;
+}
+
+.progress-tbd {
+  border-radius: 100px;
+  padding: 10px 15px;
+  background-color: rgb(65, 65, 65);
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  color: white;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  margin-right: 5px;
+}
+
+.progress-key {
+  width: 21px;
+  height: 31px;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -40px;
+}
+
+.answer-text {
+  color: white;
+  font-family: Arial;
+}
+
+.puzzle-img {
+  width: 700px;
+  background-color: black;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
