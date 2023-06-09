@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.gate-grid {
+  display: grid;
+  grid-template-columns: 166px 166px 166px;
+  text-align: center;
+  padding-top: 200px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.gate-container {
+  border: 3px solid;
+  border-top-width: 0px;
+}
+
+.gate-label {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.gate-image-container {
+  padding: 5px;
+}
+
+.gate-image {
+  width: 150px;
+}
+
+.gate-butt {
+  padding: 5px 13px;
+  width: 100px;
+  border: none;
+  font-size: 14px;
+}
+
+.gate-status-locks {
+  padding: 5px;
+}
+
+.gate-key {
+  margin: 2px;
+}
