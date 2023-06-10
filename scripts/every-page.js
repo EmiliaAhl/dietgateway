@@ -1,3 +1,5 @@
+//Drop down menu
+
 let gateDropHTML = "";
 
 gates.forEach((gate) => {

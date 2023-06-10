@@ -9,7 +9,7 @@
       <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
         <div class="menu-home">Home</div>
       </a>
-      <div class="menu-gate" data-toggle="dropdown">
+      <div class="menu-gate" onclick="dropDown()">
         <div>Gates v</div>
         <div class="menu-gate-down js-gate-down"></div>
       </div>
