@@ -5,9 +5,6 @@ const gates = [
     rgbColor: "220, 24, 78",
     status: "Enter",
     keys: getKeys(0, 3),
-    password: {
-      puzzle1: "hej",
-    },
   },
 ];
 

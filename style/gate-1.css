@@ -10,6 +10,14 @@
   flex-direction: column;
 }
 
+.key-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
 .gate {
   background-color: rgb(240, 24, 78);
   border: rgb(240, 24, 78);

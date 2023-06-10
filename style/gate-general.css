@@ -90,3 +90,17 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
+.next-butt,
+.submit-butt {
+  display: inline;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.next-butt {
+  opacity: 0;
+}

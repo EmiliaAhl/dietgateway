@@ -58,9 +58,16 @@
       <img class="puzzle-img" src="assets/Gate_1_key_1.png" />
     </div>
     <div class="answer">
-      <div class="answer-text">Key 1:</div>
-      <input type="text" placeholder="ANSWER" />
-      <button>Submit</button>
+      <div class="key-container">
+        <div class="answer-text">Key 1:</div>
+        <input class="js-password-input" type="text" placeholder="" />
+      </div>
+      <div>
+        <div class="submit-butt" onclick="checkAnswer('aGk=')">Submit</div>
+        <a href="https://emiliaahl.github.io/dietgateway/gate1-2.html">
+          <div class="js-next-butt next-butt">Next puzzle</div>
+        </a>
+      </div>
     </div>
     <script src="scripts/gates.js"></script>
     <script src="scripts/password.js"></script>
