@@ -9,11 +9,18 @@
   <body>
     <header>
       <div class="header-logo">
-        <img class="logo-logo" src="assets/evildietlogo.png" />
+        <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
+          <img class="logo-logo" src="assets/evildietlogo.png" />
+        </a>
       </div>
       <div class="header-menu">
-        <div class="menu-home">Home</div>
-        <div class="menu-gate">Gates &#8595;</div>
+        <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
+          <div class="menu-home">Home</div>
+        </a>
+        <div class="menu-gate" onclick="dropDown()">
+          <div>Gates v</div>
+          <div class="menu-gate-down js-gate-down"></div>
+        </div>
         <div class="menu-thank">Special Thank &gt;</div>
       </div>
     </header>
@@ -21,6 +28,7 @@
       <div class="gate-grid js-gate-grid"></div>
     </div>
     <script src="scripts/gates.js"></script>
+    <script src="scripts/every-page.js"></script>
     <script src="scripts/main-page.js"></script>
   </body>
 </html>

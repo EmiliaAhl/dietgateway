@@ -1,3 +1,25 @@
+/*
+  <header>
+    <div class="header-logo">
+      <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
+        <img class="logo-logo" src="assets/evildietlogo.png" />
+      </a>
+    </div>
+    <div class="header-menu">
+      <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
+        <div class="menu-home">Home</div>
+      </a>
+      <div class="menu-gate" data-toggle="dropdown">
+        <div>Gates v</div>
+        <div class="menu-gate-down js-gate-down"></div>
+      </div>
+      <div class="menu-thank">Special Thank &gt;</div>
+    </div>
+  </header>
+  <script src="scripts/gates.js"></script>
+  <script src="scripts/every-page.js"></script>
+*/
+
 body {
   margin: 0;
   background-image: url(background.png);
@@ -17,24 +39,51 @@ header {
   position: fixed;
   left: 0px;
   right: 0px;
-  z-index: 200;
+  z-index: 100;
 }
 
 .logo-logo {
   height: 40px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .header-menu {
   justify-self: end;
   display: grid;
-  grid-template-columns: 64px 77px 150px;
+  grid-template-columns: 64px 83px 150px;
   align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
 }
 
 .menu-home,
 .menu-gate,
 .menu-thank {
-  font-size: 16px;
   margin: 10px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-gate-down {
+  z-index: 200;
+  position: absolute;
+  background-color: lightgreen;
+  padding: 10px 15px;
+  line-height: 25px;
+  font: 16px;
+  top: 50px;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.drop-visible {
+  opacity: 1;
 }
