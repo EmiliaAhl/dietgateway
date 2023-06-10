@@ -4,7 +4,7 @@ let gateDropHTML = "";
 
 gates.forEach((gate) => {
   gateDropHTML += `
-    <a href="https://emiliaahl.github.io/dietgateway/${gate.name}.html">
+    <a href="https://emiliaahl.github.io/dietgateway/${gate.link}.html">
       <div>${gate.name}</div>
     </a>
   `;

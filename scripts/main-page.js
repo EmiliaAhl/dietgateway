@@ -11,7 +11,7 @@ gates.forEach((gate) => {
           </div>
           <div class="gate-status-container">
             <div class="gate-status-text">
-              <button class="gate-butt">${gate.status}</button>
+              ${gate.status}
             </div>
             <div class="gate-status-locks">
               ${gate.keys}

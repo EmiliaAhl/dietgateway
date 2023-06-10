@@ -5,7 +5,6 @@ function checkAnswer(solution) {
 
   if (password === solution) {
     buttonElement.classList.add("drop-visible");
-    
   } else {
     alert("no");
   }

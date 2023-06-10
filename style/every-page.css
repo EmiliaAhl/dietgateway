@@ -82,8 +82,10 @@ a:active {
   top: 50px;
   border-radius: 10px;
   opacity: 0;
+  pointer-events: none;
 }
 
 .drop-visible {
   opacity: 1;
+  pointer-events: auto;
 }

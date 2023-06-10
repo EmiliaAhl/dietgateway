@@ -1,10 +1,11 @@
 const gates = [
   {
     name: "Gate 1",
+    link: getLink(1, 3),
     image: "dietlogo.jpg",
     rgbColor: "220, 24, 78",
-    status: "Enter",
     keys: getKeys(1, 3),
+    status: getStatus(1, 3),
   },
 ];
 
@@ -35,4 +36,54 @@ function getKeys(numGate, numPuzzle) {
     }
   }
   return keyImages;
+}
+
+function getStatus(numGate, numPuzzle) {
+  let locked = "";
+  let unlocked = "";
+
+  for (let i = 1; i <= numPuzzle; i++) {
+    if (localStorage.hasOwnProperty("gate" + numGate + "." + i)) {
+      unlocked++;
+    } else {
+      locked++;
+    }
+  }
+
+  let buttonHTML = "";
+  if (locked === 0) {
+    buttonHTML +=
+      '<a href="https://emiliaahl.github.io/dietgateway/gate' +
+      numGate +
+      '-1.html"><button class="gate-butt">Visit</button></a>';
+  } else {
+    buttonHTML +=
+      '<a href="https://emiliaahl.github.io/dietgateway/gate' +
+      numGate +
+      "-" +
+      (unlocked + 1) +
+      '.html"><button class="gate-butt">Enter</button></a>';
+  }
+  return buttonHTML;
+}
+
+function getLink(numGate, numPuzzle) {
+  let locked = "";
+  let unlocked = "";
+
+  for (let i = 1; i <= numPuzzle; i++) {
+    if (localStorage.hasOwnProperty("gate" + numGate + "." + i)) {
+      unlocked++;
+    } else {
+      locked++;
+    }
+  }
+
+  let link = "";
+  if (locked === 0) {
+    link = "gate" + numGate + "-1";
+  } else {
+    link = "gate" + numGate + "-" + (unlocked + 1);
+  }
+  return link;
 }
