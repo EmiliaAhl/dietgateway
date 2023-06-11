@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/every-page.css" />
     <link rel="stylesheet" href="style/gate-1.css" />
   </head>
-  <body>
+  <body onload="checkProgress(1, 1)">
     <header>
       <div class="header-logo">
         <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
@@ -31,11 +31,19 @@
               <button class="reset-butt" onclick="clearProgress(); location.reload()">Yes</button>
               <button class="reset-butt" onclick="location.reload()">Cancel</button>
             </div>
+            <div>
+              <button onclick="updateProgress('gate1.1');location.reload()">puzzle1</button>
+              <button onclick="updateProgress('gate1.2');location.reload()">puzzle2</button>
+              <button onclick="updateProgress('gate1.3');location.reload()">puzzle3</button>
+            </div>
           </div>
         </div>
         <div class="menu-thank">Special Thank &gt;</div>
       </div>
     </header>
+    <div class="too-far-screen visible">
+      <p>You haven't finished the earlier puzzles silly</ps>
+    </div>
     <div class="info-gate">
       <div></div>
       <div class="gate">
@@ -66,7 +74,7 @@
       <div></div>
     </div>
     <div>
-      <img class="puzzle-img" src="assets/Gate_1_key_3_animation.gif" />
+      <img class="puzzle-img" src="assets/Gate_1_key_1.png" />
     </div>
     <div class="answer">
       <div class="key-container">

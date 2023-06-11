@@ -1,25 +1,3 @@
-/*
-  <header>
-    <div class="header-logo">
-      <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
-        <img class="logo-logo" src="assets/evildietlogo.png" />
-      </a>
-    </div>
-    <div class="header-menu">
-      <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
-        <div class="menu-home">Home</div>
-      </a>
-      <div class="menu-gate" onclick="dropDown()">
-        <div>Gates v</div>
-        <div class="menu-gate-down js-gate-down"></div>
-      </div>
-      <div class="menu-thank">Special Thank &gt;</div>
-    </div>
-  </header>
-  <script src="scripts/gates.js"></script>
-  <script src="scripts/every-page.js"></script>
-*/
-
 body {
   margin: 0;
   background-image: url(background.png);
@@ -100,6 +78,7 @@ a:active {
   cursor: default;
   pointer-events: none;
   opacity: 0;
+  border-radius: 10px;
 }
 
 .reset-text {
@@ -115,7 +94,7 @@ a:active {
   cursor: pointer;
 }
 
-.drop-visible {
+.visible {
   opacity: 1;
   pointer-events: auto;
 }

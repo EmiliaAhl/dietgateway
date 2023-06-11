@@ -5,9 +5,16 @@ function checkAnswer(solution) {
   buttonElement = document.querySelector(".js-next-butt");
 
   if (password === solution) {
-    buttonElement.classList.add("drop-visible");
+    buttonElement.classList.add("visible");
   } else {
     alert("no");
   }
 }
+
+function checkProgress(numGate, numPuzzle) {
+  if (localStorage.hasOwnProperty('gate' + numGate + '.' + numPuzzle)){
+    document.querySelector('.too-far-screen').classList.remove('visible')
+  }
+}
+
 
