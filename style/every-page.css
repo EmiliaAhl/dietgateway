@@ -51,7 +51,7 @@ header {
 .header-menu {
   justify-self: end;
   display: grid;
-  grid-template-columns: 64px 83px 150px;
+  grid-template-columns: 64px 83px 50px 150px;
   align-items: center;
   cursor: pointer;
   font-size: 16px;
@@ -83,6 +83,36 @@ a:active {
   border-radius: 10px;
   opacity: 0;
   pointer-events: none;
+}
+
+.reset-box {
+  z-index: 300;
+  position: absolute;
+  background-color: lightblue;
+  width: 500px;
+  height: 250px;
+  left: -160px;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: default;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.reset-text {
+  color: red;
+  margin: 10px;
+}
+
+.reset-butt {
+  border: 1px solid;
+  margin: 10px;
+  font-size: 14px;
+  padding: 5px 8px;
+  cursor: pointer;
 }
 
 .drop-visible {
