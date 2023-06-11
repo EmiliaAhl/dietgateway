@@ -26,7 +26,7 @@ function getKeys(numGate, numPuzzle) {
   for (let i = 0; i <= unlocked + locked; i++) {
     if (unlocked > i) {
       keyImages +=
-        '<a href="http://127.0.0.1:5500/gate' +
+        '<a href="https://emiliaahl.github.io/dietgateway/gate' +
         numGate +
         "-" +
         (i + 1) +

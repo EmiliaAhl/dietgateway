@@ -99,7 +99,6 @@
   border-radius: 5px;
   margin: 5px;
   cursor: pointer;
-  pointer-events: all;
 }
 
 .next-butt {
