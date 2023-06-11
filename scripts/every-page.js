@@ -20,3 +20,9 @@ function dropDown() {
     dropElement.classList.remove("drop-visible");
   }
 }
+
+document.addEventListener('click', event => {
+  if (document.querySelector('.js-gate-down').classList.contains('drop-visible') && event.target.closest('#down-menu') === null) {
+    document.querySelector('.js-gate-down').classList.remove('drop-visible');
+  }
+})

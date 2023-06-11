@@ -32,7 +32,7 @@ function getKeys(numGate, numPuzzle) {
         (i + 1) +
         '.html"><img class="gate-key" src="assets/key.png"/> </a>';
     } else if (locked > i - unlocked) {
-      keyImages += '<img class="gate-key" src="assets/Key_Grey.png"/>';
+      keyImages += '<img class="locked-gate-key" src="assets/Key_Grey.png"/>';
     }
   }
   return keyImages;

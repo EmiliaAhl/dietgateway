@@ -46,7 +46,11 @@
   padding: 5px;
 }
 
+.locked-gate-key,
 .gate-key {
   margin: 2px;
+}
+
+.gate-key {
   cursor: pointer;
 }
