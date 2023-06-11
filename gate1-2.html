@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Gate 1.2</title>
+    <link rel="stylesheet" href="style/gate-general.css" />
+    <link rel="stylesheet" href="style/every-page.css" />
+    <link rel="stylesheet" href="style/gate-1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
+          <img class="logo-logo" src="assets/evildietlogo.png" />
+        </a>
+      </div>
+      <div class="header-menu">
+        <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
+          <div class="menu-home">Home</div>
+        </a>
+        <div class="menu-gate" onclick="dropDown()" id="down-menu">
+          <div>Gates v</div>
+          <div class="menu-gate-down js-gate-down" ></div>
+        </div>
+        <div class="menu-reset" onclick="resetBox()" id="reset-box">
+          <div>Reset</div>
+          <div class="reset-box js-reset-box">
+            <div class="reset-text">Are you sure you want to reset your progress?</div>
+            <div class="reset-text">This can NOT be reversed</div>
+            <div>
+              <button class="reset-butt" onclick="clearProgress(); location.reload()">Yes</button>
+              <button class="reset-butt" onclick="location.reload()">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-thank">Special Thank &gt;</div>
+      </div>
+    </header>
+    <div class="info-gate">
+      <div></div>
+      <div class="gate">
+        <div class="gate-name">Gate 1</div>
+        <img class="gate-img" src="assets/dietlogo.jpg" />
+      </div>
+      <div class="progress">
+        <div class="progress-title">Progress</div>
+        <div class="progress-bar">
+          <div class="progress-pos">
+            <button class="progress-done js-progress-button">1</button>
+            <img class="progress-key key1" src="" />
+          </div>
+          <img src="assets/progressline_orange.png" />
+          <div class="progress-pos">
+            <button class="progress-done js-progress-button">2</button>
+            <img class="progress-key key2" src="" />
+          </div>
+          <img src="assets/progressline.png" />
+          <div class="progress-pos">
+            <a href="https://emiliaahl.github.io/dietgateway/gate1-3.html">
+              <button class="progress-tbd js-progress-button">3</button>
+            </a>
+            <img class="progress-key key3" src="" />
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <div>
+      <img class="puzzle-img" src="assets/Gate_1_key_3_animation.gif" />
+    </div>
+    <div class="answer">
+      <div class="key-container">
+        <div class="answer-text">Key 2:</div>
+        <input class="js-password-input" type="text" placeholder="" />
+      </div>
+      <div>
+        <div class="submit-butt" onclick="checkAnswer('c2VlIHlvdSBhZ2FpbiBzb29uIDop')">
+          Submit
+        </div>
+        <a class="hide-link" href="https://emiliaahl.github.io/dietgateway/gate1-2.html">
+          <div
+            class="js-next-butt next-butt"
+            onclick="updateProgress('gate1.3')"
+          >
+            Next puzzle
+          </div>
+        </a>
+      </div>
+    </div>
+    <script src="scripts/progress.js"></script>
+    <script src="scripts/gates.js"></script>
+    <script src="scripts/every-page.js"></script>
+    <script src="scripts/gate1.js"></script>
+    <script src="scripts/general-gate.js"></script>
+  </body>
+</html>

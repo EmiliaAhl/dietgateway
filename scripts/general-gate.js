@@ -1,6 +1,7 @@
 function checkAnswer(solution) {
-  const inputElement = document.querySelector(".js-password-input");
-  const password = btoa(inputElement.value);
+  let inputElement = document.querySelector(".js-password-input");
+  inputElement = inputElement.value.toLowerCase();
+  const password = btoa(inputElement);
   buttonElement = document.querySelector(".js-next-butt");
 
   if (password === solution) {
