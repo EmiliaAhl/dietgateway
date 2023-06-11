@@ -2,12 +2,15 @@
 
 <html>
   <head>
-    <title>Gate 1.2</title>
+    <!-- Gate.Puzzle -->
+    <title>Gate 1.1</title>
     <link rel="stylesheet" href="style/gate-general.css" />
     <link rel="stylesheet" href="style/every-page.css" />
+    <!--Change style to right gate-->
     <link rel="stylesheet" href="style/gate-1.css" />
   </head>
-  <body onload="checkProgress(1, 1)">
+  <!--Add numbers for current gate and last puzzle, remove for puzzle 1-->
+  <body onload="checkProgress(0, 0)">
     <header>
       <div class="header-logo">
         <a href="https://emiliaahl.github.io/dietgateway/main-page.html">
@@ -36,56 +39,56 @@
         <div class="menu-thank">Special Thank &gt;</div>
       </div>
     </header>
+    <!--Remove for puzzle 1-->
     <div class="too-far-screen visible">
       <div class="text-background">
         <p>You haven't finished the earlier puzzles yet silly</p>
       </div>
     </div>
+    <!---->
     <div class="info-gate">
       <div></div>
       <div class="gate">
+        <!--Change name to current gate-->
         <div class="gate-name">Gate 1</div>
+        <!--Change picture to right for gate-->
         <img class="gate-img" src="assets/dietlogo.jpg" />
       </div>
       <div class="progress">
         <div class="progress-title">Progress</div>
         <div class="progress-bar">
+          <!--Copy between these lines-->
           <div class="progress-pos">
             <button class="progress-done js-progress-button">1</button>
             <img class="progress-key key1" src="" />
           </div>
-          <img src="assets/progressline_orange.png" />
-          <div class="progress-pos">
-            <button class="progress-done js-progress-button">2</button>
-            <img class="progress-key key2" src="" />
-          </div>
           <img src="assets/progressline.png" />
-          <div class="progress-pos">
-            <a href="https://emiliaahl.github.io/dietgateway/gate1-3.html">
-              <button class="progress-tbd js-progress-button">3</button>
-            </a>
-            <img class="progress-key key3" src="" />
-          </div>
+          <!--Add for every puzzle, change line and progress for number of puzzles-->
         </div>
       </div>
       <div></div>
     </div>
     <div>
+      <!--Change to correct puzzle image-->
       <img class="puzzle-img" src="assets/Gate_1_key_1.png" />
     </div>
     <div class="answer">
       <div class="key-container">
-        <div class="answer-text">Key 2:</div>
+        <!--Change to current puzzle number-->
+        <div class="answer-text">Key 1:</div>
         <input class="js-password-input" type="text" placeholder="" />
       </div>
       <div>
+        <!--Encode password and enter here-->
         <div class="submit-butt" onclick="checkAnswer('')">
           Submit
         </div>
-        <a class="hide-link" href="https://emiliaahl.github.io/dietgateway/gate1-3.html">
+        <!--Change link to next puzzle-->
+        <a class="hide-link" href="https://emiliaahl.github.io/dietgateway/gate1-2.html">
+          <!--Change progress update to current gate-->
           <div
             class="js-next-butt next-butt"
-            onclick="updateProgress('gate1.2')"
+            onclick="updateProgress('gate1.1')"
           >
             Next puzzle
           </div>
@@ -95,6 +98,7 @@
     <script src="scripts/progress.js"></script>
     <script src="scripts/gates.js"></script>
     <script src="scripts/every-page.js"></script>
+    <!--Change gate to current-->
     <script src="scripts/gate1.js"></script>
     <script src="scripts/general-gate.js"></script>
   </body>

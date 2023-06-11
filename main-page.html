@@ -21,12 +21,29 @@
           <div>Gates v</div>
           <div class="menu-gate-down js-gate-down" ></div>
         </div>
+        <div class="menu-reset" onclick="resetBox()" id="reset-box">
+          <div>Reset</div>
+          <div class="reset-box js-reset-box">
+            <div class="reset-text">Are you sure you want to reset your progress?</div>
+            <div class="reset-text">This can NOT be reversed</div>
+            <div>
+              <button class="reset-butt" onclick="clearProgress(); location.reload()">Yes</button>
+              <button class="reset-butt" onclick="location.reload()">Cancel</button>
+            </div>
+            <div>
+              <button onclick="updateProgress('gate1.1');location.reload()">puzzle1</button>
+              <button onclick="updateProgress('gate1.2');location.reload()">puzzle2</button>
+              <button onclick="updateProgress('gate1.3');location.reload()">puzzle3</button>
+            </div>
+          </div>
+        </div>
         <div class="menu-thank">Special Thank &gt;</div>
       </div>
     </header>
     <div class="main">
       <div class="gate-grid js-gate-grid"></div>
     </div>
+    <script src="scripts/progress.js"></script>
     <script src="scripts/gates.js"></script>
     <script src="scripts/every-page.js"></script>
     <script src="scripts/main-page.js"></script>
