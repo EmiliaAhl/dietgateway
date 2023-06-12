@@ -35,18 +35,24 @@
   background-color: red;
 }
 
-.puzzle-gate-1-container,
-.puzzle-gate-2-container,
-.puzzle-gate-3-container,
-.puzzle-gate-4-container,
-.puzzle-gate-5-container {
+.puzzle-gate-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 20;
   position: absolute;
-  top: 350px;
-  left: 200px;
-  right: 200px;
-  bottom: -200px;
+  top: 400px;
+  left: 350px;
+  right: 350px;
+  bottom: -100px;
+}
+
+.puzzle-gate-butt {
+  cursor: pointer;
+}
+
+.puzzle-gate-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
