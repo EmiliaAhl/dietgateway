@@ -2,7 +2,7 @@ const gates = [
   {
     name: "Gate 1",
     link: getLink(1, 3),
-    image: "dietlogo.jpg",
+    image: "gate1/dietlogo.jpg",
     rgbColor: "220, 24, 78",
     keys: getKeys(1, 3),
     status: getStatus(1, 3),
@@ -51,7 +51,7 @@ function getStatus(numGate, numPuzzle) {
   }
 
   let buttonHTML = "";
-  if (locked === 0) {
+  if (!locked) {
     buttonHTML +=
       '<a href="https://emiliaahl.github.io/dietgateway/gate' +
       numGate +

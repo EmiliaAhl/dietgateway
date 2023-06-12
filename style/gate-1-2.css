@@ -1,0 +1,52 @@
+.puzzle-gate-container1 {
+  display: grid;
+  grid-template-columns: 1fr 300px 300px 300px 1fr;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.puzzle-gate-container2 {
+  display: grid;
+  grid-template-columns: 1fr 300px 300px 1fr;
+  margin-bottom: 50px;
+}
+
+.puzzle-gate {
+  width: 250px;
+}
+
+.puzzle-gate-1-container {
+  background-color: purple;
+}
+
+.puzzle-gate-2-container {
+  background-color: green;
+}
+
+.puzzle-gate-3-container {
+  background-color: gold;
+}
+
+.puzzle-gate-4-container {
+  background-color: navy;
+}
+
+.puzzle-gate-5-container {
+  background-color: red;
+}
+
+.puzzle-gate-1-container,
+.puzzle-gate-2-container,
+.puzzle-gate-3-container,
+.puzzle-gate-4-container,
+.puzzle-gate-5-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  position: absolute;
+  top: 350px;
+  left: 200px;
+  right: 200px;
+  bottom: -200px;
+}
