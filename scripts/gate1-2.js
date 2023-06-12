@@ -8,8 +8,10 @@ document.querySelector('.puzzle-butt1').addEventListener('click', () => {
   document.querySelector('.puzzle-gate-1-container').classList.add('puzzle-gate-container');
 })
 
+/*
 document.querySelector('.puzzle-butt2').addEventListener('click', () => {
   if (localStorage.hasOwnProperty('gate1.2.1')) {
+    alert('hi');
     document.querySelector('.puzzle-gate-2-container').innerHTML = `
       <div>Gate 2</div>
       <div>I'm tall when I'm young, and I'm short when I'm old. What am I?</div>
@@ -20,7 +22,9 @@ document.querySelector('.puzzle-butt2').addEventListener('click', () => {
     alert('Nice try')
   }
 })
+*/
 
+/*
 document.querySelector('.puzzle-butt3').addEventListener('click', () => {
   if (localStorage.hasOwnProperty('gate1.2.2')) {
     document.querySelector('.puzzle-gate-3-container').innerHTML = `
@@ -33,8 +37,7 @@ document.querySelector('.puzzle-butt3').addEventListener('click', () => {
     alert('Nice try')
   }
 })
-
-console.log(btoa('69'))
+*/
 
 function checkPuzzleAnswer(solution, puzzle) {
   let inputElement = document.querySelector('.puzzle-input');
@@ -47,11 +50,11 @@ function checkPuzzleAnswer(solution, puzzle) {
     document.querySelector('.puzzle-gate-' + puzzle + '-container').classList.remove('puzzle-gate-container');
     document.querySelector('.puzzle-gate-' + puzzle).innerHTML = `
     <img class="puzzle-gate" src="assets/gate1/Gate_` + puzzle + `_open.png">
-    <button>Done</button>`
+    <button class="puzzle-butt` + puzzle + `">Done</button>`
+    updateProgress('gate1.2.' + puzzle);
     document.querySelector('.puzzle-gate-' + nextPuzzle).innerHTML = `
     <img class="puzzle-gate" src="assets/gate1/Gate_` + nextPuzzle + `_closed.png">
     <button class="puzzle-butt` + nextPuzzle + `">Enter</button>`
-    updateProgress('gate1.2.' + puzzle)
   } else {
     alert('no')
   }
@@ -60,7 +63,7 @@ function checkPuzzleAnswer(solution, puzzle) {
 if (localStorage.hasOwnProperty('gate1.2.1')) {
   document.querySelector('.puzzle-gate-1').innerHTML = `
   <img class="puzzle-gate" src="assets/gate1/Gate_1_open.png">
-  <button>Done</button>`
+  <button class="puzzle-butt1">Done</button>`
   document.querySelector('.puzzle-gate-2').innerHTML = `
   <img class="puzzle-gate" src="assets/gate1/Gate_2_closed.png">
   <button class="puzzle-butt2">Enter</button>`
@@ -69,7 +72,7 @@ if (localStorage.hasOwnProperty('gate1.2.1')) {
 if (localStorage.hasOwnProperty('gate1.2.2')) {
   document.querySelector('.puzzle-gate-2').innerHTML = `
   <img class="puzzle-gate" src="assets/gate1/Gate_2_open.png">
-  <button>Done</button>`
+  <button class="puzzle-butt2">Done</button>`
   document.querySelector('.puzzle-gate-3').innerHTML = `
   <img class="puzzle-gate" src="assets/gate1/Gate_3_closed.png">
   <button class="puzzle-butt3">Enter</button>`

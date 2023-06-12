@@ -11,8 +11,22 @@
   margin-bottom: 50px;
 }
 
+.puzzle-gate-1,
+.puzzle-gate-2,
+.puzzle-gate-3,
+.puzzle-gate-4,
+.puzzle-gate-5 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .puzzle-gate {
   width: 250px;
+}
+
+.puzzle-gate-butt {
+  cursor: pointer;
 }
 
 .puzzle-gate-1-container {
@@ -45,14 +59,4 @@
   left: 350px;
   right: 350px;
   bottom: -100px;
-}
-
-.puzzle-gate-butt {
-  cursor: pointer;
-}
-
-.puzzle-gate-1 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
