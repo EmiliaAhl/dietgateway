@@ -4,10 +4,11 @@ document.querySelector('.puzzle-butt1').addEventListener('click', () => {
   <div>Gate 1</div>
   <div>Croissant</div>
   <input class="puzzle-input" placeholder="" type="text">
-  <button onclick="checkPuzzleAnswer('Y3JvaXNzYW50', 1)" class="puzzle-gate-butt">Submit</button>`;
+  <button onclick="checkPuzzleAnswer('Y3JvaXNzYW50', 1)" class="puzzle-gate-butt">Submit</button>
+  <button onclick="closePuzzleWindow(1)" class="puzzle-gate-butt">Exit</button>`;
   document.querySelector('.puzzle-gate-1-container').classList.add('puzzle-gate-container');
+  document.querySelector('.puzzle-gate-backdrop').classList.add('puzzle-gate-backdrop-active');
 })
-
 
 document.querySelector('.puzzle-butt2').addEventListener('click', () => {
   if (localStorage.hasOwnProperty('gate1.2.1')) {
@@ -15,8 +16,10 @@ document.querySelector('.puzzle-butt2').addEventListener('click', () => {
       <div>Gate 2</div>
       <div>I'm tall when I'm young, and I'm short when I'm old. What am I?</div>
       <input class="puzzle-input" placeholder="" type="text">
-      <button onclick="checkPuzzleAnswer('YSBjYW5kbGU=', 2)" class="puzzle-gate-butt">Submit</button>`;
+      <button onclick="checkPuzzleAnswer('YSBjYW5kbGU=', 2)" class="puzzle-gate-butt">Submit</button>
+      <button onclick="closePuzzleWindow(2)" class="puzzle-gate-butt">Exit</button>`;
     document.querySelector('.puzzle-gate-2-container').classList.add('puzzle-gate-container');
+    document.querySelector('.puzzle-gate-backdrop').classList.add('puzzle-gate-backdrop-active');
   } else {
     alert('Nice try')
   }
@@ -28,8 +31,10 @@ document.querySelector('.puzzle-butt3').addEventListener('click', () => {
       <div>Gate 3</div>
       <div>3*3-6+9*6/2+13*3</div>
       <input class="puzzle-input" placeholder="" type="text">
-      <button onclick="checkPuzzleAnswer('Njk=', 3)" class="puzzle-gate-butt">Submit</button>`;
+      <button onclick="checkPuzzleAnswer('Njk=', 3)" class="puzzle-gate-butt">Submit</button>
+      <button onclick="closePuzzleWindow(3)" class="puzzle-gate-butt">Exit</button>`;
     document.querySelector('.puzzle-gate-3-container').classList.add('puzzle-gate-container');
+    document.querySelector('.puzzle-gate-backdrop').classList.add('puzzle-gate-backdrop-active');
   } else {
     alert('Not yet')
   }
@@ -41,8 +46,10 @@ document.querySelector('.puzzle-butt4').addEventListener('click', () => {
       <div>Gate 4</div>
       <div>Maze</div>
       <input class="puzzle-input" placeholder="" type="text">
-      <button onclick="checkPuzzleAnswer('cG9wY29ybg==', 4)" class="puzzle-gate-butt">Submit</button>`;
+      <button onclick="checkPuzzleAnswer('cG9wY29ybg==', 4)" class="puzzle-gate-butt">Submit</button>
+      <button onclick="closePuzzleWindow(4)" class="puzzle-gate-butt">Exit</button>`;
     document.querySelector('.puzzle-gate-4-container').classList.add('puzzle-gate-container');
+    document.querySelector('.puzzle-gate-backdrop').classList.add('puzzle-gate-backdrop-active');
   } else {
     alert('Why are you clicking this?')
   }
@@ -55,6 +62,7 @@ document.querySelector('.puzzle-butt5').addEventListener('click', () => {
       <div>Cipher</div>
       <button onclick="closePuzzleWindow(5)" class="puzzle-gate-butt">Exit</button>`;
     document.querySelector('.puzzle-gate-5-container').classList.add('puzzle-gate-container');
+    document.querySelector('.puzzle-gate-backdrop').classList.add('puzzle-gate-backdrop-active');
   } else {
     alert('Try the other direction')
   }

@@ -63,5 +63,14 @@
   top: 400px;
   left: 350px;
   right: 350px;
-  bottom: -100px;
+  bottom: 350px;
+}
+
+.puzzle-gate-backdrop-active {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: -459px;
 }
