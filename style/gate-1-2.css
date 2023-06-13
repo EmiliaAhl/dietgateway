@@ -29,7 +29,8 @@
 .puzzle-butt2,
 .puzzle-butt3,
 .puzzle-butt4,
-.puzzle-butt5 {
+.puzzle-butt5,
+.puzzle-gate-butt {
   cursor: pointer;
 }
 
@@ -53,7 +54,7 @@
   background-color: red;
 }
 
-.puzzle-gate-container-1 {
+.puzzle-gate-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,16 +64,4 @@
   left: 350px;
   right: 350px;
   bottom: -100px;
-}
-
-.puzzle-gate-container-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
