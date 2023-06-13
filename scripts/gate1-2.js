@@ -53,23 +53,24 @@ document.querySelector('.puzzle-butt5').addEventListener('click', () => {
     document.querySelector('.puzzle-gate-5-container').innerHTML = `
       <div>Gate 5</div>
       <div>Cipher</div>
-      <button onclick='
-        document.querySelector('.puzzle-gate-5-container').innerHTML = '';
-        document.querySelector('.puzzle-gate-5-container').classList.remove('puzzle-gate-container');
-        updateProgress('gate1.2.5');
-        location.reload();
-      ' class="puzzle-gate-butt">Exit</button>`;
+      <button onclick="closePuzzleWindow(5)" class="puzzle-gate-butt">Exit</button>`;
     document.querySelector('.puzzle-gate-5-container').classList.add('puzzle-gate-container');
   } else {
     alert('Try the other direction')
   }
 })
 
+function closePuzzleWindow(puzzle) {
+  document.querySelector('.puzzle-gate-' + puzzle + '-container').innerHTML = '';
+  document.querySelector('.puzzle-gate-' + puzzle + '-container').classList.remove('puzzle-gate-container');
+  updateProgress('gate1.2.' + puzzle);
+  location.reload();
+}
+
 function checkPuzzleAnswer(solution, puzzle) {
   let inputElement = document.querySelector('.puzzle-input');
   inputElement = inputElement.value.toLowerCase();
   const password = btoa(inputElement);
-  const nextPuzzle = puzzle + 1
 
   if (password === solution) {
     document.querySelector('.puzzle-gate-' + puzzle + '-container').innerHTML = '';
