@@ -5,7 +5,18 @@ document.querySelector('.puzzle-butt1').addEventListener('click', () => {
   <div>Croissant</div>
   <input class="puzzle-input" placeholder="" type="text">
   <button onclick="checkPuzzleAnswer('Y3JvaXNzYW50', 1)" class="puzzle-gate-butt">Submit</button>`;
-  document.querySelector('.puzzle-gate-1-container').classList.add('puzzle-gate-container');
+  document.querySelector('.puzzle-gate-1-container').classList.add('puzzle-gate-container-1');
+})
+
+document.querySelector('.puzzle-butt2').addEventListener('click', () => {
+  alert('hi');
+  document.querySelector('.puzzle-gate-2-container')
+  .innerHTML = `
+  <div>Gate 2</div>
+  <div>I'm tall when I'm young, and I'm short when I'm old. What am I?</div>
+  <input class="puzzle-input" placeholder="" type="text">
+  <button onclick="checkPuzzleAnswer('YSBjYW5kbGU=', 2)" class="puzzle-gate-butt">Submit</button>`;
+  document.querySelector('.puzzle-gate-2-container').classList.add('puzzle-gate-container-2');
 })
 
 /*
@@ -17,7 +28,7 @@ document.querySelector('.puzzle-butt2').addEventListener('click', () => {
       <div>I'm tall when I'm young, and I'm short when I'm old. What am I?</div>
       <input class="puzzle-input" placeholder="" type="text">
       <button onclick="checkPuzzleAnswer('YSBjYW5kbGU=', 2)" class="puzzle-gate-butt">Submit</button>`;
-    document.querySelector('.puzzle-gate-2-container').classList.add('puzzle-gate-container');
+    document.querySelector('.puzzle-gate-2-container').classList.add('puzzle-gate-container-2');
   } else {
     alert('Nice try')
   }
@@ -32,7 +43,7 @@ document.querySelector('.puzzle-butt3').addEventListener('click', () => {
       <div>3*3-6+9*6/2+13*3</div>
       <input class="puzzle-input" placeholder="" type="text">
       <button onclick="checkPuzzleAnswer('Njk=', 3)" class="puzzle-gate-butt">Submit</button>`;
-    document.querySelector('.puzzle-gate-3-container').classList.add('puzzle-gate-container');
+    document.querySelector('.puzzle-gate-3-container').classList.add('puzzle-gate-container-3');
   } else {
     alert('Nice try')
   }
@@ -47,14 +58,9 @@ function checkPuzzleAnswer(solution, puzzle) {
 
   if (password === solution) {
     document.querySelector('.puzzle-gate-' + puzzle + '-container').innerHTML = '';
-    document.querySelector('.puzzle-gate-' + puzzle + '-container').classList.remove('puzzle-gate-container');
-    document.querySelector('.puzzle-gate-' + puzzle).innerHTML = `
-    <img class="puzzle-gate" src="assets/gate1/Gate_` + puzzle + `_open.png">
-    <button class="puzzle-butt` + puzzle + `">Done</button>`
+    document.querySelector('.puzzle-gate-' + puzzle + '-container').classList.remove('puzzle-gate-container-' + puzzle);
     updateProgress('gate1.2.' + puzzle);
-    document.querySelector('.puzzle-gate-' + nextPuzzle).innerHTML = `
-    <img class="puzzle-gate" src="assets/gate1/Gate_` + nextPuzzle + `_closed.png">
-    <button class="puzzle-butt` + nextPuzzle + `">Enter</button>`
+    location.reload();
   } else {
     alert('no')
   }
