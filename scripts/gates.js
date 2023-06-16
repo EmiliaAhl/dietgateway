@@ -1,11 +1,11 @@
 const gates = [
   {
     name: "Gate 1",
-    link: getLink(1, 3),
+    link: getLink(1, 4),
     image: "gate1/dietlogo.jpg",
     rgbColor: "220, 24, 78",
-    keys: getKeys(1, 3),
-    status: getStatus(1, 3),
+    keys: getKeys(1, 4),
+    status: getStatus(1, 4),
   },
 ];
 

@@ -1,4 +1,4 @@
-document.querySelector('.progress-key').innerHTML = updateKey(1, 3)
+document.querySelector('.progress-key').innerHTML = updateKey(1, 4)
 
 function updateKey(numGate, numPuzzle) {
   let locked = "";
