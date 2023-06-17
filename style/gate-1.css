@@ -48,3 +48,9 @@
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
 }
+
+.title-full-game {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

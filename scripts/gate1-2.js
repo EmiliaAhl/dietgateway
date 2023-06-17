@@ -32,8 +32,6 @@ document.querySelector(".puzzle-butt2").addEventListener("click", () => {
   }
 });
 
-console.log(btoa("a candle"));
-
 document.querySelector(".puzzle-butt3").addEventListener("click", () => {
   if (localStorage.hasOwnProperty("gate1.2.2")) {
     document.querySelector(".puzzle-gate-3-container").innerHTML = `
@@ -143,5 +141,3 @@ if (localStorage.hasOwnProperty("gate1.2.4")) {
 if (localStorage.hasOwnProperty("gate1.2.5")) {
   document.querySelector(".puzzle-butt5").innerText = "Done";
 }
-
-console.log(document.querySelector("body"));
