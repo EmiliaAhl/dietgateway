@@ -1,10 +1,10 @@
-function checkAnswer(solution) {
+function checkAnswer(solution, solution2) {
   let inputElement = document.querySelector(".js-password-input");
   inputElement = inputElement.value.toLowerCase();
   const password = btoa(inputElement);
   buttonElement = document.querySelector(".js-next-butt");
 
-  if (password === solution) {
+  if (password === solution || solution2) {
     buttonElement.classList.add("visible");
   } else {
     alert("no");
@@ -12,13 +12,13 @@ function checkAnswer(solution) {
 }
 
 function checkProgress(numGate, numPuzzle) {
-  if (!localStorage.hasOwnProperty('gate' + numGate + '.' + numPuzzle)){
-    document.querySelector('.progressCheck').innerHTML = `
+  if (!localStorage.hasOwnProperty("gate" + numGate + "." + numPuzzle)) {
+    document.querySelector(".progressCheck").innerHTML = `
       <div class="too-far-screen">
         <div class="text-background">
           <p>You haven't finished the earlier puzzles yet silly</p>
         </div>
       </div>
-    `
+    `;
   }
 }
