@@ -32,18 +32,26 @@
 .puzzle-butt5,
 .puzzle-gate-butt {
   cursor: pointer;
+  background: linear-gradient(
+    to bottom right,
+    rgb(230, 230, 230),
+    rgb(120, 120, 120)
+  );
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 .puzzle-gate-1-container {
-  background-color: purple;
+  background-color: rgb(214, 192, 236);
 }
 
 .puzzle-gate-2-container {
-  background-color: green;
+  background-color: rgb(53, 136, 48);
 }
 
 .puzzle-gate-3-container {
-  background-color: gold;
+  background-color: rgb(226, 191, 101);
 }
 
 .puzzle-gate-4-container {
@@ -51,7 +59,7 @@
 }
 
 .puzzle-gate-5-container {
-  background-color: red;
+  background-color: black;
 }
 
 .puzzle-gate-container {

@@ -86,7 +86,11 @@
 .next-butt,
 .submit-butt {
   display: inline;
-  background-color: white;
+  background: linear-gradient(
+    to bottom right,
+    rgb(230, 230, 230),
+    rgb(120, 120, 120)
+  );
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
