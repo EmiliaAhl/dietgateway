@@ -38,3 +38,13 @@
   grid-template-columns: 43px 41px 43px 41px 43px 41px 43px;
   align-items: center;
 }
+
+.gate4_game {
+  height: 550px;
+  width: 412px;
+}
+
+.puzzle-img-container {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+}

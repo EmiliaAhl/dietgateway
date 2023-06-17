@@ -76,7 +76,7 @@ document.querySelector(".puzzle-butt5").addEventListener("click", () => {
   if (localStorage.hasOwnProperty("gate1.2.4")) {
     document.querySelector(".puzzle-gate-5-container").innerHTML = `
       <div>Gate 5</div>
-      <div>Cipher</div>
+      <img class='gate1_2_img' src='assets/gate1/Gate_1_5.png'/>
       <button onclick="closePuzzleWindow(5)" class="puzzle-gate-butt">Exit</button>`;
     document
       .querySelector(".puzzle-gate-5-container")

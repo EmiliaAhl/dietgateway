@@ -69,10 +69,7 @@
 }
 
 .puzzle-gate-backdrop-active {
-  background: url(Background.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  border: none;
 }
 
 .gate1_2_img {
