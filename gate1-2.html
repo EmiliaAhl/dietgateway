@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/gate-general.css" />
     <link rel="stylesheet" href="style/every-page.css" />
     <link rel="stylesheet" href="style/gate-1.css" />
-    <link rel="stylesheet" href="style/gate-1-2.css">
+    <link rel="stylesheet" href="style/gate-1-2.css" />
   </head>
   <body onload="checkProgress(1, 1);">
     <header>
@@ -21,24 +21,32 @@
         </a>
         <div class="menu-gate" onclick="dropDown()" id="down-menu">
           <div>Gates v</div>
-          <div class="menu-gate-down js-gate-down" ></div>
+          <div class="menu-gate-down js-gate-down"></div>
         </div>
         <div class="menu-reset" onclick="resetBox()" id="reset-box">
           <div>Reset</div>
           <div class="reset-box js-reset-box">
-            <div class="reset-text">Are you sure you want to reset your progress?</div>
+            <div class="reset-text">
+              Are you sure you want to reset your progress?
+            </div>
             <div class="reset-text">This can NOT be reversed</div>
             <div>
-              <button class="reset-butt" onclick="clearProgress(); location.reload()">Yes</button>
-              <button class="reset-butt" onclick="location.reload()">Cancel</button>
+              <button
+                class="reset-butt"
+                onclick="clearProgress(); location.reload()"
+              >
+                Yes
+              </button>
+              <button class="reset-butt" onclick="location.reload()">
+                Cancel
+              </button>
             </div>
           </div>
         </div>
         <div class="menu-thank">Special Thank &gt;</div>
       </div>
     </header>
-    <div class="progressCheck">
-    </div>
+    <div class="progressCheck"></div>
     <div class="info-gate">
       <div></div>
       <div class="gate">
@@ -49,12 +57,12 @@
         <div class="progress-title">Progress</div>
         <div class="progress-bar">
           <div class="progress-pos">
-              <button class="progress-done js-progress-button">1</button>
+            <button class="progress-done js-progress-button">1</button>
             <img class="progress-key key1" src="" />
           </div>
           <img src="assets/progressline_orange.png" />
           <div class="progress-pos">
-              <button class="progress-done js-progress-button">2</button>
+            <button class="progress-done js-progress-button">2</button>
             <img class="progress-key key2" src="" />
           </div>
           <img src="assets/progressline.png" />
@@ -64,7 +72,7 @@
           </div>
           <img src="assets/progressline.png" />
           <div class="progress-pos">
-              <button class="progress-tbd js-progress-button">4</button>
+            <button class="progress-tbd js-progress-button">4</button>
             <img class="progress-key key4" src="" />
           </div>
         </div>
@@ -76,15 +84,24 @@
         <div class="puzzle-gate-container1">
           <div></div>
           <div class="puzzle-gate-1">
-            <img class="puzzle-gate image1" src="assets/gate1/Gate_1_closed.png">
+            <img
+              class="puzzle-gate image1"
+              src="assets/gate1/Gate_1_open.png"
+            />
             <button class="puzzle-butt1">Enter</button>
           </div>
           <div class="puzzle-gate-2">
-            <img class="puzzle-gate image2" src="assets/gate1/Gate_2_closed.png">
+            <img
+              class="puzzle-gate image2"
+              src="assets/gate1/Gate_2_closed.png"
+            />
             <button class="puzzle-butt2">Locked</button>
           </div>
           <div class="puzzle-gate-3">
-            <img class="puzzle-gate image3" src="assets/gate1/Gate_3_closed.png">
+            <img
+              class="puzzle-gate image3"
+              src="assets/gate1/Gate_3_closed.png"
+            />
             <button class="puzzle-butt3">Locked</button>
           </div>
           <div></div>
@@ -92,26 +109,27 @@
         <div class="puzzle-gate-container2">
           <div></div>
           <div class="puzzle-gate-4">
-            <img class="puzzle-gate image4" src="assets/gate1/Gate_4_closed.png">
+            <img
+              class="puzzle-gate image4"
+              src="assets/gate1/Gate_4_closed.png"
+            />
             <button class="puzzle-butt4">Locked</button>
           </div>
           <div class="puzzle-gate-5">
-            <img class="puzzle-gate image5" src="assets/gate1/Gate_5_closed.png">
+            <img
+              class="puzzle-gate image5"
+              src="assets/gate1/Gate_5_closed.png"
+            />
             <button class="puzzle-butt5">Locked</button>
           </div>
           <div></div>
         </div>
         <div class="puzzle-gate-backdrop">
-          <div class="puzzle-gate-1-container" id="gate1.2.1">
-          </div>
-          <div class="puzzle-gate-2-container" id="gate1.2.2">
-          </div>
-          <div class="puzzle-gate-3-container" id="gate1.2.3">
-          </div>
-          <div class="puzzle-gate-4-container" id="gate1.2.4">
-          </div>
-          <div class="puzzle-gate-5-container" id="gate1.2.5">
-          </div>
+          <div class="puzzle-gate-1-container" id="gate1.2.1"></div>
+          <div class="puzzle-gate-2-container" id="gate1.2.2"></div>
+          <div class="puzzle-gate-3-container" id="gate1.2.3"></div>
+          <div class="puzzle-gate-4-container" id="gate1.2.4"></div>
+          <div class="puzzle-gate-5-container" id="gate1.2.5"></div>
         </div>
       </div>
     </div>
@@ -122,10 +140,16 @@
       </div>
       <div>
         <!--Encode password and enter here-->
-        <div class="submit-butt" onclick="checkAnswer('dGhlcGFzc3dvcmRpc3Bhc3N3b3JkYnV0aW5jaXBoZXI=')">
+        <div
+          class="submit-butt"
+          onclick="checkAnswer('dGhlcGFzc3dvcmRpc3Bhc3N3b3JkYnV0aW5jaXBoZXI=')"
+        >
           Submit
         </div>
-        <a class="hide-link" href="https://emiliaahl.github.io/dietgateway/gate1-3.html">
+        <a
+          class="hide-link"
+          href="https://emiliaahl.github.io/dietgateway/gate1-3.html"
+        >
           <div
             class="js-next-butt next-butt"
             onclick="updateProgress('gate1.2')"
