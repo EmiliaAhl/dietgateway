@@ -1,7 +1,7 @@
 document.querySelector(".puzzle-butt1").addEventListener("click", () => {
   document.querySelector(".puzzle-gate-1-container").innerHTML = `
   <div>Gate 1</div>
-  <div>Croissant</div>
+  <img class='gate1_2_img' src='assets/gate1/Gate_1_2.png'></>
   <input class="puzzle-input" placeholder="" type="text">
   <button onclick="checkPuzzleAnswer('Y3JvaXNzYW50', 1)" class="puzzle-gate-butt">Submit</button>
   <button onclick="closePuzzleWindow(1)" class="puzzle-gate-butt">Exit</button>`;
@@ -57,7 +57,7 @@ document.querySelector(".puzzle-butt4").addEventListener("click", () => {
   if (localStorage.hasOwnProperty("gate1.2.3")) {
     document.querySelector(".puzzle-gate-4-container").innerHTML = `
       <div>Gate 4</div>
-      <div>Maze</div>
+      <img src = 'assets/gate1/Gate_1_4.png' class='gate1_2_img'></>
       <input class="puzzle-input" placeholder="" type="text">
       <button onclick="checkPuzzleAnswer('cG9wY29ybg==', 4)" class="puzzle-gate-butt">Submit</button>
       <button onclick="closePuzzleWindow(4)" class="puzzle-gate-butt">Exit</button>`;
