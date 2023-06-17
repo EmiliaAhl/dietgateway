@@ -101,10 +101,10 @@
 .too-far-screen {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 50;
-  top: 60px;
-  bottom: -300px;
-  left: 50px;
-  right: 50px;
+  top: 550px;
+  left: 450px;
+  height: 400px;
+  width: 600px;
   position: absolute;
   pointer-events: none;
   display: flex;

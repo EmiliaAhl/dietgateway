@@ -143,3 +143,5 @@ if (localStorage.hasOwnProperty("gate1.2.4")) {
 if (localStorage.hasOwnProperty("gate1.2.5")) {
   document.querySelector(".puzzle-butt5").innerText = "Done";
 }
+
+console.log(document.querySelector("body"));
