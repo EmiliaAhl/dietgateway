@@ -20,24 +20,32 @@
         </a>
         <div class="menu-gate" onclick="dropDown()" id="down-menu">
           <div>Gates v</div>
-          <div class="menu-gate-down js-gate-down" ></div>
+          <div class="menu-gate-down js-gate-down"></div>
         </div>
         <div class="menu-reset" onclick="resetBox()" id="reset-box">
           <div>Reset</div>
           <div class="reset-box js-reset-box">
-            <div class="reset-text">Are you sure you want to reset your progress?</div>
+            <div class="reset-text">
+              Are you sure you want to reset your progress?
+            </div>
             <div class="reset-text">This can NOT be reversed</div>
             <div>
-              <button class="reset-butt" onclick="clearProgress(); location.reload()">Yes</button>
-              <button class="reset-butt" onclick="location.reload()">Cancel</button>
+              <button
+                class="reset-butt"
+                onclick="clearProgress(); location.reload()"
+              >
+                Yes
+              </button>
+              <button class="reset-butt" onclick="location.reload()">
+                Cancel
+              </button>
             </div>
           </div>
         </div>
         <div class="menu-cipher">Cipher &gt;</div>
       </div>
     </header>
-    <div class="progressCheck">
-    </div>
+    <div class="progressCheck"></div>
     <div class="info-gate">
       <div></div>
       <div class="gate">
@@ -48,7 +56,7 @@
         <div class="progress-title">Progress</div>
         <div class="progress-bar">
           <div class="progress-pos">
-              <button class="progress-done js-progress-button">1</button>
+            <button class="progress-done js-progress-button">1</button>
             <img class="progress-key key1" src="" />
           </div>
           <img src="assets/progressline_orange.png" />
@@ -70,10 +78,19 @@
       </div>
       <div></div>
     </div>
-    <div>
-      <!--Change to correct puzzle image-->
-      <img class="puzzle-img" src="assets/gate1/Gate_1_key_1.png" />
+    <div class="puzzle-img-container">
+      <div></div>
+      <iframe
+        src="https://mysn922.github.io/Gate4/Game/DoItToEm"
+        frameborder="0"
+        class="gate4_game"
+      ></iframe>
+      <div></div>
     </div>
+    <a target="_blank" href="https://mysn922.github.io/Gate4/">
+      <div class="title-full-game">To a full screen version</div>
+    </a>
+
     <div class="answer">
       <div class="key-container">
         <div class="answer-text">Key 3:</div>
@@ -81,10 +98,13 @@
       </div>
       <div>
         <!--Encode password and enter here-->
-        <div class="submit-butt" onclick="checkAnswer('')">
+        <div class="submit-butt" onclick="checkAnswer('cGF0aWVuY2UgaXMga2V5')">
           Submit
         </div>
-        <a class="hide-link" href="https://emiliaahl.github.io/dietgateway/gate1-4.html">
+        <a
+          class="hide-link"
+          href="https://emiliaahl.github.io/dietgateway/gate1-4.html"
+        >
           <div
             class="js-next-butt next-butt"
             onclick="updateProgress('gate1.3')"

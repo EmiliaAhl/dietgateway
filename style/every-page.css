@@ -12,7 +12,7 @@ p {
 }
 
 header {
-  background-color: lightpink;
+  background: linear-gradient(rgb(230, 230, 230), rgb(120, 120, 120));
   display: grid;
   grid-template-columns: 50px 1fr;
   position: fixed;
@@ -54,7 +54,11 @@ a:active {
 .menu-gate-down {
   z-index: 200;
   position: absolute;
-  background-color: lightgreen;
+  background: linear-gradient(
+    to bottom right,
+    rgb(230, 230, 230),
+    rgb(120, 120, 120)
+  );
   padding: 10px 15px;
   line-height: 25px;
   font: 16px;
@@ -67,7 +71,11 @@ a:active {
 .reset-box {
   z-index: 300;
   position: absolute;
-  background-color: lightblue;
+  background: linear-gradient(
+    to top right,
+    rgb(230, 230, 230),
+    rgb(120, 120, 120)
+  );
   width: 500px;
   height: 250px;
   left: -160px;
@@ -83,7 +91,7 @@ a:active {
 }
 
 .reset-text {
-  color: red;
+  color: rgb(230, 30, 43);
   margin: 10px;
 }
 
@@ -102,4 +110,4 @@ a:active {
 
 .hide-link {
   pointer-events: none;
-} 
+}

@@ -32,26 +32,34 @@
 .puzzle-butt5,
 .puzzle-gate-butt {
   cursor: pointer;
+  background: linear-gradient(
+    to bottom right,
+    rgb(230, 230, 230),
+    rgb(120, 120, 120)
+  );
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 .puzzle-gate-1-container {
-  background-color: purple;
+  background-color: rgb(214, 192, 236);
 }
 
 .puzzle-gate-2-container {
-  background-color: green;
+  background-color: rgb(53, 136, 48);
 }
 
 .puzzle-gate-3-container {
-  background-color: gold;
+  background-color: rgb(226, 191, 101);
 }
 
 .puzzle-gate-4-container {
-  background-color: navy;
+  background-color: rgb(159, 207, 243);
 }
 
 .puzzle-gate-5-container {
-  background-color: red;
+  background-color: black;
 }
 
 .puzzle-gate-container {
@@ -60,17 +68,24 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 400px;
-  left: 350px;
-  right: 350px;
-  bottom: 350px;
+  top: 75%;
+  left: 50%;
+  padding: 20px 90px;
+  min-height: 400px;
+  min-width: 400px;
+  transform: translate(-50%, -50%);
 }
 
 .puzzle-gate-backdrop-active {
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: -459px;
+  border: none;
+}
+
+.gate1_2_img {
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.puzzle-gate-butt {
+  border: none;
 }
