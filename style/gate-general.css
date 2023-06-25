@@ -45,6 +45,7 @@
   width: 42px;
   height: 42px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .progress-tbd {
