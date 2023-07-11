@@ -15,9 +15,11 @@ function checkProgress(numGate, numPuzzle) {
   if (!localStorage.hasOwnProperty("gate" + numGate + "." + numPuzzle)) {
     document.querySelector(".progressCheck").innerHTML = `
       <div class="too-far-screen">
+        <div></div>
         <div class="text-background">
           <p>You haven't finished the earlier puzzles yet silly</p>
         </div>
+        <div></div>
       </div>
     `;
   }
