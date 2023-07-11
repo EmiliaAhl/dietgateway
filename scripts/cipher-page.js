@@ -14,7 +14,7 @@ ciphers.forEach((cipher) => {
       ${cipher.name}
     </div>
     <div class="cipher-image-container">
-      <a href="https://emiliaahl.github.io/dietgateway/assets/cipher/${cipher.image}">
+      <a target='_blank' href="https://emiliaahl.github.io/dietgateway/assets/cipher/${cipher.image}">
         <img class="cipher-image" src="assets/cipher/${cipher.image}" />
       </a>
     </div>

@@ -138,3 +138,7 @@
 .unlocked {
   cursor: pointer;
 }
+
+.answer-container {
+  position: relative;
+}

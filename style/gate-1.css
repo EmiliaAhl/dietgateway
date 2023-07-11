@@ -51,10 +51,12 @@
 .puzzle-img-container {
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
+  margin-top: 5%;
 }
 
 .title-full-game {
   color: white;
   text-align: center;
   padding: 10px;
+  margin-bottom: 15%;
 }
