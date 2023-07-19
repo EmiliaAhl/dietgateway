@@ -2,7 +2,7 @@ const gates = [
   {
     name: "Gate 1",
     link: getLink(1, 4),
-    image: "gate1/dietlogo.jpg",
+    image: "gate1/Gate_1_Symbol_blue_bg.gif",
     rgbColor: "220, 24, 78",
     keys: getKeys(1, 4),
     status: getStatus(1, 4),
